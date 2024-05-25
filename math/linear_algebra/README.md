@@ -1,1 +1,1 @@
-this is  a linear algebra project 
+this is a readme file 
