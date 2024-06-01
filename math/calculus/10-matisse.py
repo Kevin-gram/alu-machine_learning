@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 '''
-derivative of a polynomial
+    this function
+    calculates the derivative of a polynomial
 '''
+
 
 def poly_derivative(poly):
     '''
