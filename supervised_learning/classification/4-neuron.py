@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python3
 """Class Neuron that defines a single neuron performing binary classification
 """
@@ -61,20 +62,20 @@ class Neuron:
         return self.__A
 
     def cost(self, Y, A):
-OBOB        """ Compute the of the model using logistic regression
+        """ Compute the of the model using logistic regression
 
         Args:
-OBOBOB            Y (np.array): True values
+            Y (np.array): True values
             A (np.array): Prediction valuesss
-OB
+
         Returns:
-OBOBOB            float: cost function
-OB        """
+            float: cost function
+        """
         # calculate
-OB        loss = - (Y * np.log(A) + (1 - Y) * np.log(1.0000001 - A))
-OBOBOB        cost = np.mean(loss)
+        loss = - (Y * np.log(A) + (1 - Y) * np.log(1.0000001 - A))
+        cost = np.mean(loss)
         return cost
-OAOAOAOAOA
+
     def evaluate(self, X, Y):
         """ Evaluate the cost function
 
@@ -82,10 +83,10 @@ class Neuron:
             X (np.array): Input array
             Y (np.array): actual values
 
-OBOBOB        Returns:
+        Returns:
             tuple: Prediction and Cost
         """
         pred = self.forward_prop(X)
-OB        cost = self.cost(Y, pred)
+        cost = self.cost(Y, pred)
         pred = np.where(pred > 0.5, 1, 0)
-OB        return (pred, cost)
+        return (pred, cost)
