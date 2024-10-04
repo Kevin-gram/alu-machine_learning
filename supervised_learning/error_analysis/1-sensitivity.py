@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-
+"""
+Sensitivity
+"""
 import numpy as np
-sensitivity = __import__('1-sensitivity').sensitivity
 
-if __name__ == '__main__':
-    confusion = np.load('confusion.npz')['confusion']
 
-    np.set_printoptions(suppress=True)
-    print(sensitivity(confusio)
+def sensitivity(confusion):
+    
+    return np.diag(confusion) / np.sum(confusion, axis=1)
 
