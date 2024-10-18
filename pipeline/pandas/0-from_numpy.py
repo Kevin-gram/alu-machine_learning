@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 '''
     Function def from_numpy(array):
-    that creates a pd.DataFrame from a np.ndarray
 '''
 
 
