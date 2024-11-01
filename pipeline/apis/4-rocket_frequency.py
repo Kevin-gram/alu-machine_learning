@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Pipeline Api"""
+"""rocket frequency"""
 import requests
 
 
 if __name__ == '__main__':
-    """pipeline api"""
+    """rocket frequency"""
     url = "https://api.spacexdata.com/v4/launches"
     r = requests.get(url)
     rocket_dict = {"5e9d0d95eda69955f709d1eb": 0}
